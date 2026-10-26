@@ -12,8 +12,6 @@ This work has two different approachs:
 
 The first stage focused on detecting Black Rot against a heterogeneous group of non-Black Rot samples. The second stage extended the problem to the classification of five grapevine leaf conditions and included robustness analysis, model conversion, quantisation and deployment on an embedded camera-based platform.
 
--- 
-
 ## 1. Binary Black Rot Classification
 
 The first stage of the work addressed the selective detection of Black Rot.
@@ -33,8 +31,6 @@ A total of four convolutional neural network architectures were evaluated using 
 Among the evaluated architectures, **ResNet50** achieved the highest overall performance, with an accuracy of **0.989**.
 
 This stage demonstrated the feasibility of selectively detecting Black Rot. However, because all other conditions were grouped into a single non-Black Rot class, the approach was subsequently extended to multiclass classification.
-
----
 
 ## 2. Multiclass Grapevine Disease Classification
 
@@ -60,8 +56,6 @@ All models were trained using transfer learning with ImageNet-pretrained weights
 
 However, model selection for embedded deployment also considered computational requirements, conversion compatibility, quantisation behaviour and robustness. Based on these criteria, **EfficientNet-Lite1** was selected for the final embedded implementation.
 
----
-
 ## Dataset
 
 The multiclass dataset contains **4,961 grapevine leaf images** distributed across five classes:
@@ -86,8 +80,6 @@ For the multiclass experiments, the dataset was divided into:
 - **15% testing**
 
 The complete dataset is not included directly in this repository. Information regarding the original datasets and image sources should be consulted before redistribution, as different datasets may be subject to different licenses and usage conditions.
-
----
 
 ## Robustness Analysis
 
@@ -115,8 +107,6 @@ The results showed that robustness depends both on:
 
 Earlier backbone layers and depthwise convolutional layers generally showed greater sensitivity, while the classifier head was among the most robust regions.
 
----
-
 ## Embedded Deployment
 
 **EfficientNet-Lite1** was selected for the embedded implementation.
@@ -136,8 +126,6 @@ The deployment pipeline consisted of:
 5. Compiling the model to Hailo Executable Format (`.hef`)
 6. Running inference on the Hailo-8L accelerator
 7. Acquiring images using the Raspberry Pi Camera Module 3
-
----
 
 ## Camera-Based Evaluation
 
@@ -173,8 +161,6 @@ The vineyard evaluation resulted in an average combined confidence-weighted agre
 
 The experiment also highlighted the difficulty of identifying some grapevine diseases using visual symptoms alone, as disagreement was observed between the two expert assessments.
 
----
-
 ## Repository Content
 
 The repository includes code related to the different stages of the project, including:
@@ -192,8 +178,6 @@ The repository includes code related to the different stages of the project, inc
 - Hailo-8L inference
 - Controlled camera-based testing
 - Vineyard evaluation
-
----
 
 ## Publications
 
@@ -213,8 +197,6 @@ This work evaluates lightweight deep learning architectures for multiclass grape
 
 Submitted at **Smart Agricultural Technology**.
 
----
-
 ## Author
 
 **Patrícia Sergueevna Moltchanova**  
@@ -226,15 +208,11 @@ Instituto de Telecomunicações
 - **Professor Luís Nero Alves**
 - **Professor Carla Sofia Ferreira**
 
----
-
 ## Acknowledgements
 
 The development of this work was supported by the **Instituto de Telecomunicações (IT)**.
 
 The author would also like to thank **Engineer Filipe Melo** and **Engineer Sónia Leite** for their contribution to the evaluation and interpretation of the vineyard-acquired images. Additional thanks are given to Engineer Filipe Melo for his support during the vineyard visits and image acquisition.
-
----
 
 ## Data Availability
 
@@ -243,8 +221,6 @@ The complete image dataset is not directly included in this repository.
 Some images originate from publicly available datasets and remain subject to the licenses and terms established by their original providers. Additional vineyard images were acquired during the development of this work.
 
 Further information regarding dataset sources and availability can be provided separately.
-
----
 
 ## License
 
