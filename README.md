@@ -83,7 +83,12 @@ The complete dataset is not included directly in this repository. Information re
 
 ## Robustness Analysis
 
-A preliminary robustness analysis was performed on the lightweight convolutional models to investigate their sensitivity to controlled weight perturbations.
+A preliminary robustness analysis was performed on the lightweight convolutional models to investigate their sensitivity to controlled weight perturbations. 
+Only four of the models were considered due to their structure similarity:
+- EfficientNet-Lite1
+- MobileNetV2
+- MobileNetV3-Small
+- MobileNetV3-Large
 
 Uniform perturbations were applied to different groups of layers:
 
@@ -163,21 +168,39 @@ The experiment also highlighted the difficulty of identifying some grapevine dis
 
 ## Repository Content
 
-The repository includes code related to the different stages of the project, including:
+The repository includes code and supporting files related to the different stages of the project, including:
 
-- Binary Black Rot classification
-- Multiclass model training
-- Model evaluation
-- Plots generation
-- Confusion matrix generation
-- Robustness experiments
-- Weight perturbation analysis
-- ONNX model export
-- Hailo model conversion and deployment
-- Raspberry Pi camera acquisition
-- Hailo-8L inference
-- Controlled camera-based testing
-- Vineyard evaluation
+- **Binary Black Rot Classification**
+  - Model training code (`.py`)
+  - Training logs for classifier-head training and fine-tuning (`.csv`)
+  - Final evaluation metrics (`.json`)
+  - Scripts for training and validation curves (`.py`)
+
+- **Multiclass Grapevine Disease Classification**
+  - Model training code (`.py`)
+  - Training history for each model (`.csv`)
+  - Confusion matrices for each model (`.csv`)
+  - Trained model weights (`.pth`)
+  - Scripts for training and validation curves and confusion-matrix visualisation (`.py`)
+  - EfficientNet-Lite1 export to ONNX for embedded deployment (`.onnx`)
+
+- **Robustness Analysis**
+  - Uniform weight perturbation experiments for the selected models (`.py`)
+  - Selected layer groups for each architecture (`.csv`)
+  - Detailed perturbation results for each model (`.csv`)
+  - Summary robustness results (`.csv`)
+  - Scripts for perturbation experiments and robustness visualisation (`.py`)
+
+- **Embedded Deployment**
+  - ONNX export
+  - Hailo model conversion
+  - Raspberry Pi camera acquisition
+  - Hailo-8L inference scripts
+
+- **Camera-Based Evaluation**
+  - Controlled-condition testing
+  - Vineyard testing
+  - Evaluation results
 
 ## Publications
 
