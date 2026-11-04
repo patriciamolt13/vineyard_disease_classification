@@ -1,0 +1,30 @@
+{
+  "model": "MobileNetV2",
+  "img_size": [
+    224,
+    224
+  ],
+  "threshold": 0.5,
+  "accuracy": 0.9384615384615348,
+  "precision_black_rot": 0.8333333333333247,
+  "recall_black_rot": 0.9999999999999876,
+  "f1_black_rot": 0.909090909090403,
+  "confusion_matrix": {
+    "tn": 164,
+    "fp": 16,
+    "fn": 0,
+    "tp": 80
+  },
+  "keras_eval": {
+    "loss": 0.17083165049552917,
+    "compile_metrics": 0.9384615421295166
+  },
+  "class_weights": {
+    "0": 0.7222222222222218,
+    "1": 1.6249999999999973
+  },
+  "training_logs": {
+    "head": "training_log_head.csv",
+    "finetune": "training_log_finetune.csv"
+  }
+}
