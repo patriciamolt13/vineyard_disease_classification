@@ -209,11 +209,11 @@ Presented at the **15th International Symposium on Communication Systems, Networ
 
 ### Multiclass Classification and Edge Deployment
 
-**Camera-Based Grapevine Leaf Disease Classification Using Lightweight Deep Learning Models for Edge Deployment**
+**Beyond Accuracy: Evaluating Lightweight Deep Learning for Real-World Grapevine Disease Classification at the Edge**
 
 This work evaluates lightweight deep learning architectures for multiclass grapevine disease classification, robustness to weight perturbations and deployment on a Raspberry Pi 5 equipped with a Hailo-8L accelerator.
 
-Submitted at **Smart Agricultural Technology**.
+Is going to be submitted at **Smart Agricultural Technology**.
 
 ## Author
 
