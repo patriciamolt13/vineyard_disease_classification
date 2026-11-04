@@ -1,0 +1,6 @@
+true/pred,black_rot,downy_mildew,esca,healthy,powdery_mildew
+black_rot,140,0,1,0,0
+downy_mildew,1,144,0,4,1
+esca,0,1,146,1,2
+healthy,0,2,0,147,1
+powdery_mildew,1,3,1,1,140
