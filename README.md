@@ -194,6 +194,7 @@ The repository includes code and supporting files related to the different stage
 - **Camera-based Evaluation**
   - Hailo model conversion (`.hef`)
   - Raspberry Pi camera acquisition (`.py`)
+  - Calibration code (`.py`)
   - Hailo-8L otimization scripts (`.alls`)
 
 ## Publications
