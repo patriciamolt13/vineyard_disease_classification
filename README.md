@@ -191,16 +191,10 @@ The repository includes code and supporting files related to the different stage
   - Summary robustness results (`.csv`)
   - Scripts for perturbation experiments and robustness visualisation (`.py`)
 
-- **Embedded Deployment**
-  - ONNX export
-  - Hailo model conversion
-  - Raspberry Pi camera acquisition
-  - Hailo-8L inference scripts
-
-- **Camera-Based Evaluation**
-  - Controlled-condition testing
-  - Vineyard testing
-  - Evaluation results
+- **Camera-based Evaluation**
+  - Hailo model conversion (`.hef`)
+  - Raspberry Pi camera acquisition (`.py`)
+  - Hailo-8L otimization scripts (`.alls`)
 
 ## Publications
 
